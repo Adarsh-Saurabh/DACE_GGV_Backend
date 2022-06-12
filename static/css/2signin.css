@@ -1,0 +1,154 @@
+body {
+    /* margin-bottom: 10px; */
+    /* margin-left: 0%; */
+    /* margin-right: 0%; */
+    overflow-x: hidden;
+    display: block;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Changa', sans-serif;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 200;
+}
+  
+.row .border{
+    margin: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: #084e58;
+    position: sticky;
+    padding-top: 5px;
+    border-bottom: 1px solid #021b1f;
+    text-align: center;
+    color: darkgoldenrod;
+}
+header{
+    background-color: rgb(214, 209, 202);
+ 
+    width: 100%;
+    /* position: sticky; */
+    top: 0;
+
+}
+.row .border a{
+    margin: 0px;
+    display: flex;
+    color: black;
+    background-color:rgb(128, 206, 209);
+    box-sizing: border-box;
+    border: 1px solid #084e58;
+    border-radius: 3px;
+    /* text-align:center; */
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 2rem;
+    float: left;
+    align-items: center;
+    padding: 0px;
+}
+.topnav .container-fluid{
+    width: 100%;
+    background-color: rgb(214, 209, 202);
+    /* box-shadow: 0px 0px 2px #03454f; */
+
+}
+
+/* .row .container .breadcrumb{
+    background-color: rgb(128, 206, 209);
+    color: #084e58;
+    box-shadow: 5px;
+    margin-top: 0px;
+
+    padding: 0px 30px 0px 30px;
+
+} */
+.velcum{
+    
+    background-color: rgb(128, 206, 209);
+    color: #084e58;
+    box-shadow: 5px;
+    margin-top: 0px;
+    padding: 0px 30px 0px 30px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+
+
+#welcome{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Changa', sans-serif;
+    font-family: 'Heebo', sans-serif;
+    font-size: bold;
+    color: darkgoldenrod;
+    font-weight: 200;
+    background-color: #084e58;
+ 
+}
+#tips{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 35px;
+    line-height:40px;
+
+}
+.sign_in{
+    background-color: rgb(214, 209, 202);
+    border-radius: 5px;
+    color: #021b1f;
+    border: 3px solid #021b1f;
+    padding: 3px;
+}
+ .inner_sign{
+    background-color: white;
+    border-radius: 5px;
+    color: #021b1f;
+    border: 3px solid #021b1f;
+    margin:5px 25px 25px 25px;
+    padding: 3px;
+}
+
+.sign_up{
+    display: flex;
+    height: 25rem;
+    width: 20rem;
+    background-color: rgb(214, 209, 202);
+    color: #021b1f;
+    border-radius: 5px;
+    border: 3px solid #021b1f;
+}
+.sin_up{
+    background-color: #fb3;
+    color: #021b1f;
+    height: 55px;
+    border-radius: 5px;
+    border: 2px solid #021b1f;
+    margin:5px;
+    padding: 2px;
+}
+.sign_up .applicant{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+.footer_area {
+    background-color: #072e33;
+    color: #fff;
+    font-weight: 200;
+    font-family: 'Heebo', sans-serif;
+}
+
+.copy_area {
+    background-color: #0d0d0d;
+    color: #fff;
+    font-weight: 200;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* .right{
+    float: right;
+} */
