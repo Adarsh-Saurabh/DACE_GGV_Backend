@@ -1,0 +1,261 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> {% block title %}{% endblock title %}  </title>
+  <link rel="stylesheet" href="static/css/1style.css" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Changa:wght@500&family=Heebo:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Changa:wght@500&family=Heebo:wght@500&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- Code to add logo on title bar -->
+  <link rel="shortcut icon" href="images/ggvlogofavicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/ggvlogofavicon.ico" type="image/x-icon">
+</head>
+<!--Head finish-->
+
+<body>
+  <header>
+    <div class="container-fluid mt-0">
+      <div class="row justify-content-evenly">
+        <div class="col-sm-2 col-s-12 d-flex align-items-center justify-content-center">
+          <div class="logo mt-3">
+            <img src="static/images/logo.png" style="width:150px;height:150px;margin-bottom:10px;" alt="">
+          </div>
+        </div>
+        <div class="col-sm-8 col-xs-12 text-center">
+          <div class="mid_header mt-3">
+            <h2>Dr. Ambedkar Centre of Excellence</h2>
+            <h2>GGV Bilaspur Chhattisgarh</h2>
+            <h2>(DACE - GGV)</h2>
+            <h2>All India Civil Service Exam (2022-2023)</h2>
+          </div>
+        </div>
+        <div class="col-sm-2 col-s-12 d-flex align-items-center justify-content-center">
+          <div class="ghasidas_image mt-3">
+            <img src="static/images/ghasidas_photo.png" style="height:150px; width:150px; margin-bottom:10px;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Menu Bar-->
+    <div class="menu_bar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mainmenu">
+              <!--Navbar start-->
+              <nav class="navbar navbar-expand-lg bg-light  sticky-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Admin
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Coordinator</a></li>
+                          <li><a class="dropdown-item" href="#">Co-coordinator</a></li>
+                          <li><a class="dropdown-item" href="#">Nodal Officer</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Staff
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Staff member 1</a></li>
+                          <li><a class="dropdown-item" href="#">Staff member 2</a></li>
+                          <li><a class="dropdown-item" href="#">Staff member 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Subject
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Science</a></li>
+                          <li><a class="dropdown-item" href="#">Political Science</a></li>
+                          <li><a class="dropdown-item" href="#">History</a></li>
+                          <li><a class="dropdown-item" href="#">Current Affairs</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="syllabus">Course
+                          Details</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Student Details</a>
+                      </li>
+
+
+                      <!-- Contact -->
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                      </li>
+                      <!-- contact close -->
+
+                      <!-- About Us -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="6aboutggv.html">About GGV</a></li>
+                          <li><a class="dropdown-item" href="5aboutdace.html">About DACE</a></li>
+                          <li><a class="dropdown-item" href="static/images/MOU  02 04 2022.pdf" target="_blank">MOU</a></li>
+                        </ul>
+                      </li>
+                      <!-- About Us Closed -->
+                      <!-- Sign In Tab -->
+                      <li class="nav-item2  d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a class="nav-link active" aria-current="page" href="2signIn.html">Sign In</a>
+                      </li>
+                      <!-- Sign In Tab Closed -->
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <!--Slides-->
+              <div class="slider">
+                <div class="fluid-container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="static/images/slide_1.jpg"  style="height:fit-content;" class="img-thumbnail w-100" 
+                              alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="static/images/slide_2.JPG"  style="height:fit-content;" class="img-thumbnail w-100" 
+                              alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="static/images/slide_3.JPG"  style="height:fit-content;" class="img-thumbnail w-100" 
+                              alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="static/images/slide_4.JPG"  style="height:fit-content;" class="img-thumbnail w-100" 
+                              alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                          data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                          data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {% block body %}
+  
+  {% endblock body %}
+
+  <footer class="footer_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="single_ftr">
+            <h4 class="sf_title" style="color:rgb(176, 149, 13) ;">Guru Ghasidas Vishwavidyalaya, Bilaspur (C.G.)</h4>
+            <div class="newsletter_form">
+              <p>Guru Ghasidas Vishwavidyalaya, is a Central University of India, located in Bilaspur C.G. State,
+                established under Central Universities Act 2009, No. 25 of 2009. Formerly called Guru Ghasidas
+                University (GGU), established by an Act of the State Legislative Assembly, was formally inaugurated on
+                June 16, 1983.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-6">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+              <div class="single_ftr">
+                <h4 class="sf_title" style="color:rgb(176, 149, 13) ;">Mail-us</h4>
+                <!-- <ul> -->
+
+                <li>Mail us at <br><i>gguonlinein@gmail.com </i><br>for further suggestions</li>
+                <!-- </ul> -->
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+              <div class="single_ftr">
+                <h4 class="sf_title" style="color:rgb(176, 149, 13) ;">Contact us</h4>
+                <!-- <ul> -->
+
+                <li>University Help Lines</li>
+                <li><a href=""> 07314853391</a></li>
+                <!-- </ul> -->
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+              <div class="single_ftr">
+                <h4 class="sf_title" style="color:rgb(176, 149, 13) ;">Address</h4>
+                <!-- <ul> -->
+
+                <li>GGV, Koni, Bilaspur, (C.G.)<br>India, 495009 </li>
+                <!-- </ul> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="copy_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p class="copyright_text text-center">Copyright @ 2021 Guru Ghasidas Vishwavidyalaya, Bilaspur (C.G.)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
