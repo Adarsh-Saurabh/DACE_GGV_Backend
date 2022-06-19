@@ -66,7 +66,7 @@
               <!--Navbar start-->
               <nav class="navbar navbar-expand-lg bg-light  sticky-top">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"></a>
+                  <a class="navbar-brand" href="/home"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -78,17 +78,17 @@
                         <a class="nav-link active" aria-current="page" href="">Home</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                        <a class="nav-link dropdown-toggle active" href="" id="navbarDropdownMenuLink" role="button"
                           data-bs-toggle="dropdown" aria-expanded="false">
                           Admin
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                           <li><a class="dropdown-item" href="#">Coordinator</a></li>
                           <li><a class="dropdown-item" href="#">Co-coordinator</a></li>
-                          <li><a class="dropdown-item" href="#">Nodal Officer</a></li>
+                          <li><a class="dropdown-item" href="admin/">Nodal Officer</a></li>
                         </ul>
                       </li>
-                      <li class="nav-item dropdown">
+                      <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
                           data-bs-toggle="dropdown" aria-expanded="false">
                           Staff
@@ -98,17 +98,17 @@
                           <li><a class="dropdown-item" href="#">Staff member 2</a></li>
                           <li><a class="dropdown-item" href="#">Staff member 3</a></li>
                         </ul>
-                      </li>
+                      </li> -->
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
                           data-bs-toggle="dropdown" aria-expanded="false">
                           Subject
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Science</a></li>
-                          <li><a class="dropdown-item" href="#">Political Science</a></li>
-                          <li><a class="dropdown-item" href="#">History</a></li>
-                          <li><a class="dropdown-item" href="#">Current Affairs</a></li>
+                          <li><a class="dropdown-item" href="">Science</a></li>
+                          <li><a class="dropdown-item" href="">Political Science</a></li>
+                          <li><a class="dropdown-item" href="">History</a></li>
+                          <li><a class="dropdown-item" href="">Current Affairs</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
@@ -123,7 +123,7 @@
                       <!-- Contact -->
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        <a class="nav-link active" aria-current="page" href="">Contact</a>
                       </li>
                       <!-- contact close -->
 
@@ -134,8 +134,8 @@
                           About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="6aboutggv.html">About GGV</a></li>
-                          <li><a class="dropdown-item" href="5aboutdace.html">About DACE</a></li>
+                          <li><a class="dropdown-item" href="aboutggv">About GGV</a></li>
+                          <li><a class="dropdown-item" href="aboutdace">About DACE</a></li>
                           <!-- <li><a class="dropdown-item" href="static/images/MOU  02 04 2022.pdf" target="_blank">MOU</a></li> -->
                             <li><a class="dropdown-item" href="{% static 'images/MOU  02 04 2022.pdf' %}" target="_blank">MOU</a></li>
                         </ul>
@@ -143,7 +143,7 @@
                       <!-- About Us Closed -->
                       <!-- Sign In Tab -->
                       <li class="nav-item2  d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a class="nav-link active" aria-current="page" href="2signIn.html">Sign In</a>
+                        <a class="nav-link active" aria-current="page" href="register">Register</a>
                       </li>
                       <!-- Sign In Tab Closed -->
                     </ul>
@@ -151,55 +151,7 @@
                 </div>
               </nav>
               <!--Slides-->
-              <div class="slider">
-                <div class="fluid-container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <!-- <img src="static/images/slide_1.jpg"  style="height:fit-content;" class="img-thumbnail w-100"  -->
-                            <img src="{% static 'images/slide_1.jpg' %}"  style="height:fit-content;" class="img-thumbnail w-100" />
 
-                              alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <!-- <img src="static/images/slide_2.JPG"  style="height:fit-content;" class="img-thumbnail w-100" 
-                              alt="..."> -->
-                            <img src="{% static 'images/slide_2.JPG' %}"  style="height:fit-content;" class="img-thumbnail w-100" 
-                            alt="..." />
-
-                          </div>
-                          <div class="carousel-item">
-                            <!-- <img src="static/images/slide_3.JPG"  style="height:fit-content;" class="img-thumbnail w-100" 
-                              alt="..."> -->
-                            <img src="{% static 'images/slide_3.JPG' %}"  style="height:fit-content;" class="img-thumbnail w-100"
-                          </div>
-                          <div class="carousel-item">
-                            <!-- <img src="static/images/slide_4.JPG"  style="height:fit-content;" class="img-thumbnail w-100" 
-                              alt="..."> -->
-                            <img src="{% static 'images/slide_4.JPG' %}"  style="height:fit-content;" class="img-thumbnail w-100"
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
         </div>
       </div>
     </div>
