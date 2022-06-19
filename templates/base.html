@@ -2,6 +2,7 @@
 
 <html lang="en">
 {% load static %}
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +28,7 @@
   <!-- <link src="{% static 'images/ggvlogofavicon.ico' %}" type='image/x-icon' /> -->
 
   <!-- <link rel="icon" href="images/ggvlogofavicon.ico" type="image/x-icon"> -->
+{% block custom_css %}{% endblock custom_css %}
 </head>
 <!--Head finish-->
 
@@ -75,7 +77,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Home</a>
+                        <a class="nav-link active" aria-current="page" href="home">Home</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="" id="navbarDropdownMenuLink" role="button"

@@ -1,27 +1,7 @@
-<!doctype html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Guru Ghasidas Vishwavidyalaya</title>
-
-  <link rel="stylesheet" href="1style.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Changa:wght@500&family=Heebo:wght@500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Changa:wght@500&family=Heebo:wght@500&display=swap"
-    rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-  <!-- Code to add logo on title bar -->
-  <link rel="shortcut icon" href="images/ggvlogofavicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/ggvlogofavicon.ico" type="image/x-icon">
+{% block title %} About GGV {% endblock title %}
+{% block custom_css %}
 <style>
   .body{
     margin-bottom: 60px;
@@ -55,129 +35,11 @@
 
 }
 </style>
-</head>
-
-<body>
-
-  <header>
-    <div class="container-fluid mt-0">
-      <div class="row justify-content-evenly">
-        <div class="col-sm-2 col-s-12 d-flex align-items-center justify-content-center">
-          <div class="logo mt-3">
-            <img src="images/logo.png" style="width:150px;height:150px;margin-bottom:10px;" alt="">
-          </div>
-        </div>
-        <div class="col-sm-8 col-xs-12 text-center">
-          <div class="mid_header mt-3">
-            <h2>Dr. Ambedkar Center Of Excellance</h2>
-            <h2>GGV Bilaspur Chhattisgarh</h2>
-            <h2>(DACE - GGV)</h2>
-            <h2>All India Civil Service Exam (2022-2023)</h2>
-          </div>
-        </div>
-        <div class="col-sm-2 col-s-12 d-flex align-items-center justify-content-center">
-          <div class="ghasidas_image mt-3">
-            <img src="images/ghasidas_photo.png" style="height:150px; width:150px; margin-bottom:10px;" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Menu Bar-->
-    <div class="menu_bar">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="mainmenu">
-              <!--Navbar start-->
-              <nav class="navbar navbar-expand-lg bg-light  sticky-top">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="1index.html">Home</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          Admin
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Coordinator</a></li>
-                          <li><a class="dropdown-item" href="#">Co-coordinator</a></li>
-                          <li><a class="dropdown-item" href="#">Nodal Officer</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          Staff
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Staff member 1</a></li>
-                          <li><a class="dropdown-item" href="#">Staff member 2</a></li>
-                          <li><a class="dropdown-item" href="#">Staff member 3</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          Subject
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Science</a></li>
-                          <li><a class="dropdown-item" href="#">Political Science</a></li>
-                          <li><a class="dropdown-item" href="#">History</a></li>
-                          <li><a class="dropdown-item" href="#">Current Affairs</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="4syllabus.html">Course
-                          Details</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Student Details</a>
-                      </li>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                      </li>
-                      <!-- About Us -->
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          About Us
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="6aboutggv.html">About GGV</a></li>
-                          <li><a class="dropdown-item" href="5aboutdace.html">About DACE</a></li>
-                          <li><a class="dropdown-item" href="images/MOU  02 04 2022.pdf" target="_blank">MOU</a></li>
-                        </ul>
-                      </li>
-                      <!-- About Us Closed -->
-                       <!-- Sign In Tab -->
-                       <li class="nav-item2  d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a class="nav-link active" aria-current="page" href="2signIn.html">Sign In</a>
-                      </li>
-                      <!-- Sign In Tab Closed -->
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+{% endblock custom_css %}
+{% block body %}
 
 
-  <!--header finish-->
+
 <div class="container">
   <div class="row">
     <span id="ab">ABOUT GGV:Guru Ghasidas Vishwavidyalaya</span>
