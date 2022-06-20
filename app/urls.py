@@ -10,5 +10,4 @@ urlpatterns = [
     path('aboutdace/', views.aboutdace, name='aboutdace'),
     path('aboutggv/', views.aboutggv, name='aboutggv'),
 
-
-]
+ ]

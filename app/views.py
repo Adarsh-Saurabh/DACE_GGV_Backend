@@ -5,10 +5,10 @@ import requests
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'home.html', {'navbar': 'home'})
 
 def syllabus(request):
-    return render(request, 'syllabus.html')
+    return render(request, 'syllabus.html', {'navbar': 'syllabus'})
 
 def register(request):
     if request.method == 'POST':
@@ -65,15 +65,15 @@ def register(request):
         caste_certificate=caste_certificate, qualification=qualification)
         final.save()
         return HttpResponse("Sucess!")
-    return render(request, 'register.html')
+    return render(request, 'register.html', {'navbar': 'register'})
 
 
 def success(request):
-    return render(request, 'success.html')
+    return render(request, 'success.html', {'navbar': 'success'})
 
 def aboutdace(request):
-    return render(request, 'aboutdace.html')
+    return render(request, 'aboutdace.html', {'navbar': 'aboutdace'})
 
 def aboutggv(request):
-    return render(request, 'aboutggv.html')
+    return render(request, 'aboutggv.html', {'navbar': 'aboutggv'})
 
