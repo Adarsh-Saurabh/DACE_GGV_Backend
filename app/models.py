@@ -10,6 +10,7 @@ class Login(models.Model):
     category = models.CharField(max_length=100)
     father_name = models.CharField(max_length=100)
     mother_name = models.CharField(max_length=100)
+    permanent_address = models.CharField(max_length=400)
     address = models.CharField(max_length=400)
     state = models.CharField(max_length=100)
     pincode = models.IntegerField()

@@ -30,6 +30,7 @@ def register(request):
         father_name = request.POST['father_name']
         mother_name = request.POST['mother_name']
         address = request.POST['address']
+        permanent_address = request.POST["permanent_address"]
         # state = request.POST['state']
         if 'state' in request.POST:
             state = request.POST['state']
@@ -62,7 +63,7 @@ def register(request):
         final = Login.objects.create(emailId=emailId, name=name, dob=dob, gender=gender,
         category=category, father_name=father_name, mother_name=mother_name, address=address,
         state=state, pincode=pincode,phone_no=phone_no, profile=profile, signature=signature,
-        caste_certificate=caste_certificate, qualification=qualification)
+        caste_certificate=caste_certificate, qualification=qualification, permanent_address=permanent_address)
         final.save()
         return HttpResponse("Sucess!")
     return render(request, 'register.html', {'navbar': 'register'})
