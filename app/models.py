@@ -20,6 +20,7 @@ class Login(models.Model):
     caste_certificate = models.FileField(upload_to='category/caste_certificate/')
     qualification = models.FileField(upload_to='qualification/')
     registration_no = models.CharField(max_length=50)
+    
 
 
     def __str__(self):
