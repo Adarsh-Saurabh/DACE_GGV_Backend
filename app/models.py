@@ -19,11 +19,11 @@ class Login(models.Model):
     signature = models.FileField(upload_to='signature_pics/')
     caste_certificate = models.FileField(upload_to='category/caste_certificate/')
     qualification = models.FileField(upload_to='qualification/')
+    registration_no = models.CharField(max_length=50)
+
 
     def __str__(self):
         return self.name
 
 
-class Registration(models.Model):
-    registration_no = models.IntegerField()
-    
+
