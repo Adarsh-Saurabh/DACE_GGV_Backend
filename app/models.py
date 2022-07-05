@@ -22,3 +22,8 @@ class Login(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Registration(models.Model):
+    registration_no = models.IntegerField()
+    

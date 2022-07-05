@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from .models import Login
 import requests
+from datetime import datetime as d
 
 
 # Create your views here.
@@ -67,6 +68,11 @@ def register(request):
         final.save()
         return HttpResponse("Sucess!")
     return render(request, 'register.html', {'navbar': 'register'})
+
+def admit_card(request):
+    date = d.now()
+    registration_no ="GGV_DACE" +  str(date.strftime("%Y%m%d%H%M%S"))
+    
 
 
 def success(request):
