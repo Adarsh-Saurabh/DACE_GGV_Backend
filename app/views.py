@@ -15,7 +15,7 @@ def syllabus(request):
 def register(request):
     if request.method == 'POST':
         emailId = request.POST['emailId']
-        # password = request.POST['password']
+
         name = request.POST['name']
         dob = request.POST['dob']
         gender = request.POST['gender']
@@ -33,49 +33,40 @@ def register(request):
         mother_name = request.POST['mother_name']
         address = request.POST['address']
         permanent_address = request.POST["permanent_address"]
-        # state = request.POST['state']
+
         if 'state' in request.POST:
             state = request.POST['state']
         else:
             state = False
         pincode = request.POST['pincode']
         phone_no = request.POST['phone_no']
-        # profile = request.FILES['profile']
+
         if 'profile' in request.FILES:
-            # if os.path.getsize(request.FILES['profile']) < 200000:
-                # profile = request.FILES['profile']
+
             profile = request.FILES['profile']
         else:
             profile = False
-            # return HttpResponse("File Size in more than 200kb")
-        # signature = request.FILES['signature']
-        if 'signature' in request.FILES:
-            # if os.path.getsize(request.FILES['signature']) < 200000:
-                # signature = request.FILES['signature']
-            signature = request.FILES['signature']
-            # print("t")
-        else:
-            # print("F")
-            signature = False
-            # return HttpResponse("File Size in more than 200kb")
 
-        # caste_certificate = request.FILES['caste_certificate']
+        if 'signature' in request.FILES:
+
+            signature = request.FILES['signature']
+
+        else:
+
+            signature = False
+
         if 'caste_certificate' in request.FILES:
-            # if os.path.getsize(request.FILES['caste_certificate']) < 200000:
-                # caste_certificate = request.FILES['caste_certificate']
+
             caste_certificate = request.FILES['caste_certificate']
         else:
             caste_certificate = False
-            # return HttpResponse("File Size in more than 200kb")
 
-        # qualification = request.FILES['qualification']
         if 'qualification' in request.FILES:
-            # if os.path.getsize(request.FILES['qualification']) < 200000:
-                # qualification = request.FILES['qualification']
+
             qualification = request.FILES['qualification']
         else:
             qualification = False
-            # return HttpResponse("File Size in more than 200kb")
+
 
         date = d.now()
         registration_no ="GGV_DACE_" +  str(date.strftime("%Y%m%d%H%M%S"))
@@ -85,7 +76,7 @@ def register(request):
         caste_certificate=caste_certificate, qualification=qualification, permanent_address=permanent_address,
         registration_no=registration_no)
         final.save()
-        return HttpResponse("Sucess!")
+        return render(request, 'success.html')
     return render(request, 'register.html')
 
     
