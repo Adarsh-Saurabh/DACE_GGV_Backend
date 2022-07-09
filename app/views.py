@@ -7,10 +7,10 @@ import os
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html', {'navbar': 'home'})
+    return render(request, 'home.html')
 
 def syllabus(request):
-    return render(request, 'syllabus.html', {'navbar': 'syllabus'})
+    return render(request, 'syllabus.html')
 
 def register(request):
     if request.method == 'POST':
@@ -86,18 +86,18 @@ def register(request):
         registration_no=registration_no)
         final.save()
         return HttpResponse("Sucess!")
-    return render(request, 'register.html', {'navbar': 'register'})
+    return render(request, 'register.html')
 
     
     
 
 
 def success(request):
-    return render(request, 'success.html', {'navbar': 'success'})
+    return render(request, 'success.html')
 
 def aboutdace(request):
-    return render(request, 'aboutdace.html', {'navbar': 'aboutdace'})
+    return render(request, 'aboutdace.html')
 
 def aboutggv(request):
-    return render(request, 'aboutggv.html', {'navbar': 'aboutggv'})
+    return render(request, 'aboutggv.html')
 

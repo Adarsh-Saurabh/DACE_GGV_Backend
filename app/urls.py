@@ -9,7 +9,7 @@ admin.site.index_title = 'Welcome to Dace admin panel!'
 
   
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('home', views.home, name='home'),
     path('syllabus/', views.syllabus, name='syllabus'),
     path('register/', views.register, name='register'),
     path('success/', views.success, name='success'),

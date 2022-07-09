@@ -77,9 +77,12 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Home</a>
+                        <!-- <a class="nav-link active" aria-current="page" href="">Home</a> -->
+                        <li><a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a></li>
                       </li>
-                      <li class="nav-item dropdown">
+                      <li><a class="nav-link active" aria-current="page" href="admin/">Admin</a></li>
+
+                      <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="" id="navbarDropdownMenuLink" role="button"
                           data-bs-toggle="dropdown" aria-expanded="false">
                           Admin
@@ -89,7 +92,7 @@
                           <li><a class="dropdown-item" href="#">Co-coordinator</a></li>
                           <li><a class="dropdown-item" href="admin/">Nodal Officer</a></li>
                         </ul>
-                      </li>
+                      </li> -->
                       <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
                           data-bs-toggle="dropdown" aria-expanded="false">
@@ -107,25 +110,26 @@
                           Subject
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="">Science</a></li>
-                          <li><a class="dropdown-item" href="">Political Science</a></li>
-                          <li><a class="dropdown-item" href="">History</a></li>
-                          <li><a class="dropdown-item" href="">Current Affairs</a></li>
+                          <li><a class="dropdown-item" href="{% url 'home' %}">Science</a></li>
+                          <li><a class="dropdown-item" href="{% url 'home' %}">Political Science</a></li>
+                          <li><a class="dropdown-item" href="{% url 'home' %}">History</a></li>
+                          <li><a class="dropdown-item" href="{% url 'home' %}">Current Affairs</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="syllabus">Course
-                          Details</a>
+
+                          <a class="nav-link active" aria-current="page" href="{% url 'syllabus' %}">Course Details</a>
+                          
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Student Details</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Student Details</a>
                       </li>
 
 
                       <!-- Contact -->
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Contact</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Contact</a>
                       </li>
                       <!-- contact close -->
 
@@ -136,8 +140,8 @@
                           About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="aboutggv">About GGV</a></li>
-                          <li><a class="dropdown-item" href="aboutdace">About DACE</a></li>
+                          <li><a class="dropdown-item" href="{% url 'aboutggv' %}">About GGV</a></li>
+                          <li><a class="dropdown-item" href="{% url 'aboutdace' %}">About DACE</a></li>
                           <!-- <li><a class="dropdown-item" href="static/images/MOU  02 04 2022.pdf" target="_blank">MOU</a></li> -->
                             <li><a class="dropdown-item" href="{% static 'images/MOU  02 04 2022.pdf' %}" target="_blank">MOU</a></li>
                         </ul>
@@ -145,7 +149,7 @@
                       <!-- About Us Closed -->
                       <!-- Sign In Tab -->
                       <li class="nav-item2  d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a class="nav-link active" aria-current="page" href="register">Register</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'register' %}">Register</a>
                       </li>
                       <!-- Sign In Tab Closed -->
                     </ul>
