@@ -2,6 +2,7 @@ from . import views
 from django.urls import path
 from django.contrib import admin
 
+
 # Djnago admin header customization
 admin.site.site_header = 'Dace admin'
 admin.site.site_title = 'Dace admin'
@@ -15,5 +16,7 @@ urlpatterns = [
     path('success/', views.success, name='success'),
     path('aboutdace/', views.aboutdace, name='aboutdace'),
     path('aboutggv/', views.aboutggv, name='aboutggv'),
+    path('admit_card/', views.admit_card, name='admit_card'),
 
  ]
+

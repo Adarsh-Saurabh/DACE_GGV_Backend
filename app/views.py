@@ -92,3 +92,8 @@ def aboutdace(request):
 def aboutggv(request):
     return render(request, 'aboutggv.html')
 
+def admit_card(request):
+    # Calling all objects
+    info = Login.objects.all()
+    return render(request, 'admit_card.html'   , {'info': info})
+
