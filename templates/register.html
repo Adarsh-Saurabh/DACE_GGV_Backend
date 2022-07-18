@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %} Log In {% endblock title %}
-
+{% block custom_css %} 
+<link rel="stylesheet" type="text/css" href="{% static 'css/3login.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/2signin.css' %}">
+{% endblock custom_css %}
 {% block body %}
     <!--End of top nav-->
     <!--Sign in form-->
@@ -15,12 +19,12 @@
         <div class="row ">
             <div class="d-flex">
                 <div class="p-2 flex-grow-1 text-wrap">
-                    <a href="1index.html" style="font-weight: 400;">
+                    <a href= "{% url 'home' %}" style="font-weight: 400;">
                     <h4>Home</h4>
                      </a>   
                 </div>
                 <div class="p-2 text-wrap">
-                    <a href="2signIn.html" style="font-weight: 400;">
+                    <a href= "{% url 'signin' %}" style="font-weight: 400;">
                     <h4>Sign In page</h4>
                      </a>   
                 </div>
@@ -124,10 +128,17 @@
                             <input type="text" class="form-control" id='father_name' name="mother_name" placeholder="Mother Name">
                         </div>
                         <div class="col-12 col-md-8">
-                            <label for="Address">Address <span class="text-danger">*</span></label>
+                            <label for="Address">Temporary Address <span class="text-danger">*</span></label>
                             <div class="row mb-3">
                                 <div class="col-12 col-md-12">
                                     <input type="text" class="form-control" id="address" name="address" placeholder="Address" required>
+                                </div>
+                            </div>
+                        </div>                        <div class="col-12 col-md-8">
+                            <label for="Address">Permanent Address <span class="text-danger">*</span></label>
+                            <div class="row mb-3">
+                                <div class="col-12 col-md-12">
+                                    <input type="text" class="form-control" id="permanent_address" name="permanent_address" placeholder="Address" required>
                                 </div>
                             </div>
                         </div>
@@ -213,8 +224,7 @@
                             </div>
                             <div class="container">
                                 <div class="col-md-12 text-center">
-                                    <button type="button" class="btn btn-primary">Register</button>
-                                    <button class="btn text-uppercase" type="submit">Get Results</button><
+                                    <button class="btn btn-primary" type="submit">Register</button>
                                 </div>
                             </div>
                         </div>

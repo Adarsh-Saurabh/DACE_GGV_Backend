@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %} DACE | Admit Card {% endblock title %}
+{% load static %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Admit Card</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>S.No</th>
+                                            <th>Name</th>
+                                            <th>Date of Birth</th>
+                                            <th>Father's Name</th>
+                                            <th>Address</th>
+                                            <th>Permanent Address</th>
+                                            <th>Profile</th>
+
+
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for student in info %}
+                                        <tr>
+                                            <td>{{ student.registration_no }}</td>
+                                            <td>{{ student.name }}</td>
+                                            <td>{{ student.dob }}</td>
+                                            <td>{{ student.father_name }}</td>
+                                            <td>{{ student.address }}</td>
+                                            <td>{{ student.premanent_address }}</td>
+                                            <td>{{ student.profile }}</td>
+                                            <img src="{{ image.model_pic.url }}">
+                                        </tr>
+                                        {% endfor %}
+
+
+{% endblock body %}

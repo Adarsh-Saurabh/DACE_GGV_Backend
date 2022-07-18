@@ -1,19 +1,20 @@
 from django.shortcuts import render, HttpResponse
 from .models import Login
-import requests
+from datetime import datetime as d
+import os
 
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html', {'navbar': 'home'})
+    return render(request, 'home.html')
 
 def syllabus(request):
-    return render(request, 'syllabus.html', {'navbar': 'syllabus'})
+    return render(request, 'syllabus.html')
 
 def register(request):
     if request.method == 'POST':
         emailId = request.POST['emailId']
-        # password = request.POST['password']
+
         name = request.POST['name']
         dob = request.POST['dob']
         gender = request.POST['gender']
@@ -30,50 +31,65 @@ def register(request):
         father_name = request.POST['father_name']
         mother_name = request.POST['mother_name']
         address = request.POST['address']
-        # state = request.POST['state']
+        permanent_address = request.POST["permanent_address"]
+
         if 'state' in request.POST:
             state = request.POST['state']
         else:
             state = False
         pincode = request.POST['pincode']
         phone_no = request.POST['phone_no']
-        # profile = request.FILES['profile']
+
         if 'profile' in request.FILES:
+
             profile = request.FILES['profile']
         else:
             profile = False
-        # signature = request.FILES['signature']
+
         if 'signature' in request.FILES:
+
             signature = request.FILES['signature']
-            print("t")
+
         else:
-            print("F")
+
             signature = False
-        # caste_certificate = request.FILES['caste_certificate']
+
         if 'caste_certificate' in request.FILES:
+
             caste_certificate = request.FILES['caste_certificate']
         else:
             caste_certificate = False
-        # qualification = request.FILES['qualification']
+
         if 'qualification' in request.FILES:
+
             qualification = request.FILES['qualification']
         else:
             qualification = False
+
+
+        date = d.now()
+        registration_no ="GGV_DACE_" +  str(date.strftime("%Y%m%d%H%M%S"))
         final = Login.objects.create(emailId=emailId, name=name, dob=dob, gender=gender,
         category=category, father_name=father_name, mother_name=mother_name, address=address,
         state=state, pincode=pincode,phone_no=phone_no, profile=profile, signature=signature,
-        caste_certificate=caste_certificate, qualification=qualification)
+        caste_certificate=caste_certificate, qualification=qualification, permanent_address=permanent_address,
+        registration_no=registration_no)
         final.save()
-        return HttpResponse("Sucess!")
-    return render(request, 'register.html', {'navbar': 'register'})
+        return render(request, 'success.html')
+    return render(request, 'register.html')
+
+    
+    
 
 
 def success(request):
-    return render(request, 'success.html', {'navbar': 'success'})
+    return render(request, 'success.html')
 
 def aboutdace(request):
-    return render(request, 'aboutdace.html', {'navbar': 'aboutdace'})
+    return render(request, 'aboutdace.html')
 
 def aboutggv(request):
-    return render(request, 'aboutggv.html', {'navbar': 'aboutggv'})
+    return render(request, 'aboutggv.html')
 
+def signin(request):
+    return render(request, 'signIn.html')
