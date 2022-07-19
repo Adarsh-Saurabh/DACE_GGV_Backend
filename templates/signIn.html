@@ -1,7 +1,13 @@
 
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}Sign In Page {% endblock title %}
+
+{% block custom_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/2signin.css' %}">
+{% endblock custom_css %}
 
 {% block body %}
   <!--End of top nav-->
@@ -72,10 +78,7 @@
                 Scanned signature of Candidate <br>
                 <br>
                 <strong style="font-weight:bold;"><br>Guidelines</strong> for filling-up online application form
-                <!--<a href="#"
-                    target="_blank">Click
-                    Here</a> -->
-                <button type="button" style="color: white !important;" class="btn btn-warning"><a href="2signIn.html">Click
+                <button type="button" style="color: white !important;" class="btn btn-warning"><a href="{% url 'signin' %}">Click
                     Here </a></button>
                 <br><br>
               </p>
@@ -91,9 +94,9 @@
           <div class="container">
             <div class="row applicant">
                 <strong style="font-weight: bold;">Applicant Login</strong>
-                <img src="images/icon-login.png" style="width:150px;height:150px;margin-bottom:10px;" alt="">
+                <img src="{% static 'images/icon-login.png' %}" style="width:150px;height:150px;margin-bottom:10px;" alt="">
               <strong>New User</strong>
-              <span><button type="button" class="btn btn-warning btn-sm"><a href="3login.html" > Register Yourself </a></button></span>
+              <span><button type="button" class="btn btn-warning btn-sm"><a href="{% url 'register' %}" > Register Yourself </a></button></span>
               <strong>Existing User</strong>
               <span><button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#"> Sign In </a></button></span>
 

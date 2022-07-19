@@ -1,6 +1,5 @@
 from django.shortcuts import render, HttpResponse
 from .models import Login
-import requests
 from datetime import datetime as d
 import os
 
@@ -92,8 +91,5 @@ def aboutdace(request):
 def aboutggv(request):
     return render(request, 'aboutggv.html')
 
-def admit_card(request):
-    # Calling all objects
-    info = Login.objects.all()
-    return render(request, 'admit_card.html'   , {'info': info})
-
+def signin(request):
+    return render(request, 'signIn.html')

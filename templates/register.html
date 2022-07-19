@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %} Log In {% endblock title %}
-
+{% block custom_css %} 
+<link rel="stylesheet" type="text/css" href="{% static 'css/3login.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/2signin.css' %}">
+{% endblock custom_css %}
 {% block body %}
     <!--End of top nav-->
     <!--Sign in form-->
@@ -15,12 +19,12 @@
         <div class="row ">
             <div class="d-flex">
                 <div class="p-2 flex-grow-1 text-wrap">
-                    <a href="1index.html" style="font-weight: 400;">
+                    <a href= "{% url 'home' %}" style="font-weight: 400;">
                     <h4>Home</h4>
                      </a>   
                 </div>
                 <div class="p-2 text-wrap">
-                    <a href="2signIn.html" style="font-weight: 400;">
+                    <a href= "{% url 'signin' %}" style="font-weight: 400;">
                     <h4>Sign In page</h4>
                      </a>   
                 </div>
